@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('image/background.png') no-repeat center;
+    background-size: cover;
+}
+
+
+.contact-box {
+    width: 70%;
+    margin: 10px 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.445);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.left img {
+    width: 100%;
+}
+
+.left .social img {
+    width: 50px;
+    margin: 10px;
+}
+
+.left .social {
+    text-align: center;
+}
+
+.right {
+    padding: 25px 40px;
+}
+
+h2 {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.field {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.336);
+    font-size: 1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+.field:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus {
+    background-color: #fff;
+    border: 2px solid #FDC300;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(146, 31, 31);
+}
+
+textarea {
+    min-height: 150px;
+}
+
+.btn {
+    width: 100%;
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #A50001;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #FED440;
+    color: #B00100;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .contact-box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .left img {
+        width: 100%;
+    }
+
+    .left {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left img {
+        width: 50%;
+    }
+
+    .left {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+
+    .container {
+        padding: 20px 20px;
+    }
+
+    .contact-box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left img {
+        width: 50%;
+    }
+
+    .left {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+
+    .container {
+        padding: 20px 20px;
+    }
+
+    .contact-box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    h2{
+        font-size: 15px;
+    }
+
+    .field{
+        padding: 0.5rem .5rem;
+    }
+
+    .left img {
+        width: 90%;
+    }
+
+    .left .social img{
+        width: 30px;
+    }
+    .left {
+        text-align: center;
+    }
+}
